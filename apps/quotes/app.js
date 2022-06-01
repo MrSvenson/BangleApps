@@ -1,5 +1,3 @@
-Bluetooth.println(JSON.stringify({t:"http", url:"https://example.com"}));
-
 setWatch(() => {
   Bluetooth.println(JSON.stringify({t:"http", url:"https://bangle.oskaralmqvist.se/quote.php"}));
   global.GB = (event) => {
@@ -12,5 +10,5 @@ setWatch(() => {
         E.showAlert("Event was: " + event.t);
       }
     };  
-  setTimeout(()=>g.test(), 1000);
+  setTimeout(()=>Bangle.drawWidgets(), 1000);
 }, BTN1, {repeat:true});
