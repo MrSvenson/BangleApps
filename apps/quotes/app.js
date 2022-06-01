@@ -1,4 +1,5 @@
 g.clear();
+
 setWatch(() => {
   Bluetooth.println(JSON.stringify({t:"http", url:"https://bangle.oskaralmqvist.se/quote.php"}));
   global.GB = (event) => {
@@ -13,3 +14,7 @@ setWatch(() => {
     };  
   setTimeout(()=>Bangle.drawWidgets(), 1000);
 }, BTN1, {repeat:true});
+
+// Load widgets
+Bangle.loadWidgets();
+Bangle.drawWidgets();
