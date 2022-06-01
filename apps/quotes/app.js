@@ -1,3 +1,4 @@
+g.clear();
 setWatch(() => {
   Bluetooth.println(JSON.stringify({t:"http", url:"https://bangle.oskaralmqvist.se/quote.php"}));
   global.GB = (event) => {
