@@ -2,7 +2,7 @@
   "name": "Random HTTP quotes",
   "shortName":"OQuotes",
   "version":"0.04",
-  "description": "Random quotes from the internet 3",
+  "description": "Random quotes from the internet 4",
   "icon": "app.png",
   "tags": "",
   "supports" : ["BANGLEJS2"],  
