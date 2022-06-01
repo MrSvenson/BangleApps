@@ -1,7 +1,7 @@
 { "id": "quotes",
   "name": "Random HTTP quotes",
   "shortName":"OQuotes",
-  "version":"0.01",
+  "version":"0.02",
   "description": "Random quotes from the internet",
   "icon": "app.png",
   "tags": "",
