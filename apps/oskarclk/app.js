@@ -25,18 +25,25 @@ function queueDraw() {
 // HTTP request
 function http() {
   var RES = false;
-  Bluetooth.println(JSON.stringify({ t: "http", url: "https://bangle.oskaralmqvist.se/bangle.php" }));
-  global.GB = (event) => {
-    RES = true;
-    if (event.t == "http") {
-      if (event.err)
-        return (event.err);
-      else
-        return (event.resp + "");
-    } else {
-      return ("Event was: " + event.t);
+  var retries = 3;
+  while (retries > 0) {
+    Bluetooth.println(JSON.stringify({ t: "http", url: "https://bangle.oskaralmqvist.se/bangle.php" }));
+    global.GB = (event) => {
+      RES = true;
+      if (event.t == "http") {
+        if (event.err)
+          return (event.err);
+        else
+          return (event.resp + "");
+      } else {
+        return ("Event was: " + event.t);
+      }
+    };
+    if (RES == true) {
+      break;
     }
-  };
+    retries--;
+  }
   if (RES == false) {
     return "NO HTTP";
   }

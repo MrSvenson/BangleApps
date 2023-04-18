@@ -1,7 +1,7 @@
 {
   "id": "oskarclk",
   "name": "Oskar Clock",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A clock using the bold Anton font, display Jula BRP info during office hours, includes a custom HTTP request for various info",
   "icon": "app.png",
   "type": "clock",
