@@ -1,0 +1,15 @@
+{
+  "id": "oskarclk",
+  "name": "Oskar Clock",
+  "version": "1.0.0",
+  "description": "A clock using the bold Anton font, display Jula BRP info during office hours, includes a custom HTTP request for various info",
+  "icon": "app.png",
+  "type": "clock",
+  "tags": "clock",
+  "supports": ["BANGLEJS2"],
+  "allow_emulator": true,
+  "storage": [
+    {"name":"oskarclk.app.js","url":"app.js"},
+    {"name":"oskarclk.img","url":"app-icon.js","evaluate":true}
+  ]
+}

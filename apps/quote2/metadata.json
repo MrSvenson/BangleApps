@@ -1,0 +1,14 @@
+{ "id": "quotes",
+  "name": "Random HTTP quotes",
+  "shortName":"OQuotes",
+  "version":"0.06",
+  "description": "Random quotes from the internet 6",
+  "icon": "app.png",
+  "tags": "",
+  "supports" : ["BANGLEJS2"],  
+  "readme": "README.md",
+  "storage": [
+    {"name":"quotes.app.js","url":"app.js"},
+    {"name":"quotes.img","url":"app-icon.js","evaluate":true}
+  ]
+}
